@@ -20,6 +20,7 @@
     "@types/readline-sync": "^1.4.8",
     "assignment-2": "file:",
     "fs-extra": "^11.3.0",
+    "hono": "^4.7.4",
     "moment": "^2.30.1",
     "prompt-sync": "^4.2.0",
     "readline-sync": "^1.4.10",
