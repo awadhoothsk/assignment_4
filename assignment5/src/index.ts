@@ -100,7 +100,7 @@ app.get("/movies/search/:title", (c) => {
   return searchResults.length > 0 ? c.json(searchResults) : c.json({ error: "No movies found" }, 404);
 });
 
-// Get All Movies
+// Get All Movies  
 app.get("/movies", (c) => {
   return c.json(movies);
 });
