@@ -88,7 +88,7 @@ app.get("/movies/genre/:genre", (c) => {
   return genreMovies.length > 0 ? c.json(genreMovies) : c.json({ error: "No movies found" }, 404);
 });
 
-// Get Movies by Director
+// Get Movies by Director name
 app.get("/movies/director/:director", (c) => {
   const directorMovies = movies.filter(m => m.director.toLowerCase() === c.req.param("director").toLowerCase());
   return directorMovies.length > 0 ? c.json(directorMovies) : c.json({ error: "No movies found" }, 404);
